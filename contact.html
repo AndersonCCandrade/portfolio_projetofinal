@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Projeto final de conclusão de curso HTML, CSS e Javascript">
+    <meta name="author" content="Anderson Carlos Carvalho de ANdrade">
+    <meta name="keywords" content="programação, html, css, javascript">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio-Contato</title>
+</head>
+<body> 
+    <div class="fundo">
+        <section class="container">
+                <header class="menu">
+                    <nav class="menu__item">
+                        <li class="menu__item_link">                    
+                            <a class="menu__item__link__texto" href="index.html">Home</a>
+                        </li>
+                        <li class="menu__item_link">  
+                            <a class="menu__item__link__texto" href="about.html">Sobre mim</a>
+                        </li>
+                        <li class="menu__item_link">  
+                            <a class="menu__item__link__texto" href="ability.html">Habilidades</a>
+                        </li>    
+                        <li class="menu__item_link">  
+                            <a class="menu__item__link__texto menu__item__link__texto__borda" href="contact.html">Contato</a>                    
+                        </li>                        
+                    </nav>
+                </header>
+
+                <section class="content">
+                    <main class="apresentacao">
+
+                        <form class="formulario" action="https://formsubmit.co/anderson.carloscarvalho@gmail.com" method="POST">
+                            <h2 class="apresentacao__conteudo__titulo"> 
+                                Entre em  
+                                <strong class="titulo"> Contato</strong> 
+                            </h2>
+                            <label class="estilo__texto_mont" for="nome">Nome:</label>
+                            <input type="text" name="name" id="nome" required placeholder="Preencha seu nome">
+                            <label class="estilo__texto_mont" for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" required placeholder="seuemail@email.com.br">
+                            <label class="estilo__texto_mont" for="mensagem">Mensagem:</label>
+                            <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+                            <button class="estilo__texto_mont" type="submit">Enviar</button>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/enviado.html">
+                       </form>
+                        
+                        <picture class="contato__fotografia">
+                            <img class="fotografia__img" src ="/assets/foto1.png" alt="Foto do Anderson Andrade em frete ao computador">
+                        </picture>
+
+                    </main>        
+                </section>
+           
+        </section>
+    
+        <footer class="rodape">
+            <picture class="logomarca">
+                <img class="alura" src="/assets/logoalura.png" alt="Logomarca da Alura">
+                <img class="senac" src="/assets/logosenac.png" alt="Logomarca do Senac São Paulo">
+            </picture>
+            <div class="rodape_autoria">
+                <p class="rodape_autoria_texto">Desenvolvido por Anderson Andrade no programa de treinamento da Alura.</p>
+            </div>
+        </footer>
+    </div>          
+</body>
+</html>
