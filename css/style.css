@@ -29,6 +29,22 @@
   text-decoration: none;  
 }
 
+.button__menu{
+  display: none;
+  width: 32px;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.menu__item__mobile{
+  display: none;
+
+}
+
 
 body{  
   box-sizing: border-box;
@@ -45,7 +61,7 @@ body{
     border-radius: 32px;
   }
 
-    .container {
+      .container {
       display: flex;
       flex-direction: column;  
       background-image: url("/assets/background.png"); 
@@ -55,22 +71,28 @@ body{
       padding: 0 5% 0% 5%;
     }
 
+      .header{
+        display: flex;
+      }
+
       .menu {
         display: flex;
         justify-content: flex-start;
         width: 100%;  
-        margin: 2% 0 0;  
+        margin: 2% 0 0;
+        position: relative;  
       }
 
         .menu__item{
           display: flex;
           flex-direction: row;
-          width: 100%;
+          width: 1300px;
           gap: 10%; 
         }
 
           .menu__item_link{
-            display: flex;                
+            display: flex;
+                         
           }
 
           .menu__item__link__texto {
@@ -169,7 +191,7 @@ body{
                 }
 
                 .imglinkedin{
-                  background-image: url("/assets/linkdinhover.png");
+                  background-image: url("/assets/linkedinhover.png");
                   z-index: 000;
                 }
 
@@ -311,7 +333,8 @@ body{
 /* Trabalhando a Resposividade (tablet 768px)*/
 
 @media (max-width: 768px) {
- .container {
+
+  .container {
     background-image: none;
     margin: 0%;
     padding: 0%;    
@@ -319,8 +342,7 @@ body{
 
     .menu {
       width: 123%;
-      margin-top: 7%;
-      
+      margin-top: 7%;     
     }
 
       .menu__item{
@@ -404,6 +426,46 @@ body{
 /* Trabalhando a Resposividade (Mobile 360px)*/
 
 @media (max-width: 470px) {
+
+  .header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .invisivel{
+    display: none;
+  }
+
+  .menu{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__item__mobile{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    margin-top: 2%;
+    gap: 16px;
+    padding: 32px 0;
+    background-color: #d9d9d9b9;
+    width: 315.5px;
+    
+  }
+
+  .content{
+    margin-top: 50px;
+  }
+
+  .menu__item {
+    display: none;
+  }
+
+  .button__menu{
+    display: initial;
+  }
        .apresentacao {
           flex-direction: column-reverse;
           justify-content: center;          
@@ -435,7 +497,8 @@ body{
         align-items:center;
         align-content: center;
         margin: 20% 10% 0 10%;
-        width: 250px;        
+        width: 250px;
+          
       }
         .fotografia__img{
           width: 250px;    

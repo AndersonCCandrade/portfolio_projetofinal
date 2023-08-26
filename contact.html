@@ -8,13 +8,14 @@
     <meta name="author" content="Anderson Carlos Carvalho de ANdrade">
     <meta name="keywords" content="programação, html, css, javascript">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio-Contato</title>
 </head>
 <body> 
     <div class="fundo">
         <section class="container">
-                <header class="menu">
+            <header class="header">
+                <div class="menu">
                     <nav class="menu__item">
                         <li class="menu__item_link">                    
                             <a class="menu__item__link__texto" href="index.html">Home</a>
@@ -29,7 +30,27 @@
                             <a class="menu__item__link__texto menu__item__link__texto__borda" href="contact.html">Contato</a>                    
                         </li>                        
                     </nav>
-                </header>
+                    <div class="menu__mobile invisivel">
+                    <nav class="menu__item__mobile">
+                        <li class="menu__item_link">                    
+                            <a class="menu__item__link__texto menu__item__link__texto__borda" href="index.html">Home</a>
+                        </li>
+                        <li class="menu__item_link">  
+                            <a class="menu__item__link__texto" href="about.html">Sobre mim</a>
+                        </li>
+                        <li class="menu__item_link">  
+                            <a class="menu__item__link__texto" href="ability.html">Habilidades</a>
+                        </li>    
+                        <li class="menu__item_link">  
+                            <a class="menu__item__link__texto" href="contact.html">Contato</a>                    
+                        </li>                        
+                    </nav>
+                    </div>
+                    <button class="button__menu">
+                        <img src="./assets/menu.svg" alt="Icone de menu mobile">
+                    </button>
+                </div>
+            </header>
 
                 <section class="content">
                     <main class="apresentacao">
@@ -50,7 +71,7 @@
                        </form>
                         
                         <picture class="contato__fotografia">
-                            <img class="fotografia__img" src ="/assets/foto1.png" alt="Foto do Anderson Andrade em frete ao computador">
+                            <img class="fotografia__img" src ="./assets/foto1.png" alt="Foto do Anderson Andrade em frete ao computador">
                         </picture>
 
                     </main>        
@@ -60,13 +81,14 @@
     
         <footer class="rodape">
             <picture class="logomarca">
-                <img class="alura" src="/assets/logoalura.png" alt="Logomarca da Alura">
-                <img class="senac" src="/assets/logosenac.png" alt="Logomarca do Senac São Paulo">
+                <img class="alura" src="./assets/logoalura.png" alt="Logomarca da Alura">
+                <img class="senac" src="./assets/logosenac.png" alt="Logomarca do Senac São Paulo">
             </picture>
             <div class="rodape_autoria">
                 <p class="rodape_autoria_texto">Desenvolvido por Anderson Andrade no programa de treinamento da Alura.</p>
             </div>
         </footer>
-    </div>          
+    </div>
+    <script src="./js/menuMobile.js"></script>          
 </body>
 </html>
